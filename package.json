@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "Switch the model of many DeepSeek Harness conversations at once — by workspace, by provider, or by intersection — with a dry-run preview, a /model-scope command and an injected panel.",
   "type": "module",
-  "license": "MIT",
   "main": "./lib/index.js",
   "exports": {
     ".": "./lib/index.js",
@@ -15,6 +14,9 @@
     "README.md",
     "LICENSE"
   ],
+  "engines": {
+    "node": ">=20"
+  },
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -23,9 +25,16 @@
     "model-switch",
     "workspace"
   ],
-  "engines": {
-    "node": ">=20"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aisyuu/dsh-model-scope.git"
   },
+  "homepage": "https://github.com/aisyuu/dsh-model-scope#readme",
+  "bugs": {
+    "url": "https://github.com/aisyuu/dsh-model-scope/issues"
+  },
+  "author": "aisyuu",
+  "license": "MIT",
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.0"
   },
