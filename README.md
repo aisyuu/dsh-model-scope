@@ -13,10 +13,16 @@ This plugin writes the same durable primitive DSH uses (`model/selection`) acros
 ## Install
 
 ```bash
-dsh plugin --profile web add dsh-model-scope
+# from GitHub
+dsh plugin --profile web add github:aisyuu/dsh-model-scope
+
+# or from a local tarball
+dsh plugin --profile web add ./dsh-model-scope-1.0.1.tgz
 ```
 
 Then restart the profile (or let the HMR layer pick it up). Nothing else is required — the bundle patch registers the plugin row.
+
+Requires DSH `>= 0.2.0-rc.1` and Node `>= 20`. No third-party runtime dependencies.
 
 `dsh plugin --profile web remove dsh-model-scope` uninstalls it. The `model/selection` events it wrote stay in your conversation logs, which is by design: they are ordinary DSH events and the conversations remain perfectly readable.
 
