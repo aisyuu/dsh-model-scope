@@ -82,6 +82,18 @@ curl -s -b <你的cookie> http://127.0.0.1:3080/dsh-model-scope/version
 
 ---
 
+## 二三、网页界面安装（另一种方式）
+
+在 DSH 网页里点 `插件` → `添加插件`，输入框里填：
+
+- ✅ `github:aisyuu/dsh-model-scope`
+- ✅ `https://github.com/aisyuu/dsh-model-scope`
+- ❌ `aisyuu/dsh-model-scope` —— 没有 `github:` 前缀会被当成 npm 包名，带斜杠必然非法，报「无法识别这个包名或地址：not a package name the registry accepts」
+
+装完后要点 **`立即启用`**，否则只是下载了没注册进 bundle。
+
+---
+
 ## 三、怎么用
 
 ### 面板

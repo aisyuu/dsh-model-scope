@@ -17,8 +17,16 @@ This plugin writes the same durable primitive DSH uses (`model/selection`) acros
 dsh plugin --profile web add github:aisyuu/dsh-model-scope
 
 # or from a local tarball
-dsh plugin --profile web add ./dsh-model-scope-1.0.1.tgz
+dsh plugin --profile web add /absolute/path/dsh-model-scope-1.0.1.tgz
 ```
+
+In the web UI (`插件 → 添加插件`), paste the spec into the field:
+
+- ✅ `github:aisyuu/dsh-model-scope`
+- ✅ `https://github.com/aisyuu/dsh-model-scope`
+- ❌ `aisyuu/dsh-model-scope` — no `github:` prefix means "an npm package name", and a slash makes it invalid. You get `无法识别这个包名或地址：not a package name the registry accepts`.
+
+After the install finishes, click `立即启用` so the bundle is registered; the panel appears after a reload.
 
 Then restart the profile (or let the HMR layer pick it up). Nothing else is required — the bundle patch registers the plugin row.
 
