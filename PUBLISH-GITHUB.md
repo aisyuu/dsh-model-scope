@@ -1,6 +1,9 @@
 # 推到 GitHub
 
-仓库：https://github.com/aisyuu/dsh-model-scope （已存在，空）
+仓库：https://github.com/aisyuu/dsh-model-scope
+
+**状态：已推送（2026-11-07 05:17）。** 部署密钥 `dsh-model-scope-deploy` 带写权限，已生效。
+以下是当时的过程记录，留作配置参考。
 
 ## 本机缺什么
 

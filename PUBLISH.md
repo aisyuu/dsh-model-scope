@@ -1,6 +1,10 @@
 # 发布 / 分发指南
 
-包已经打好，三种分发方式，任选：
+包已经打好，三种分发方式：
+
+> **当前状态（2026-11-07）**：A 未做（缺 npm 凭据）；**B 可直接用**；**C 已完成** ——
+> https://github.com/aisyuu/dsh-model-scope 已推送，别人现在就能
+> `dsh plugin --profile web add github:aisyuu/dsh-model-scope` 装上（已用空 profile 实测）。
 
 ## A. npm 公开包（推荐，别的用户可以 `dsh plugin add dsh-model-scope`）
 
