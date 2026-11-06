@@ -1,0 +1,18 @@
+# dsh-model-scope — switch many conversations to one model, by scope.
+#
+# The row loads this package's main entry as a plain Cordis plugin. Nothing
+# else is required: the web surface (HTTP routes + injected panel) activates
+# only where the `webServer` service exists, and the /model-scope command works
+# in every profile.
+#
+# Config (all optional, defaults shown):
+#   ui: true            # inject the floating panel into the web UI
+#   skipRunning: true   # leave conversations alone while a turn is writing them
+#   skipArchived: true  # leave archived conversations alone
+- insert:
+    - id: model-scope
+      name: dsh-model-scope
+      config:
+        ui: true
+        skipRunning: true
+        skipArchived: true
